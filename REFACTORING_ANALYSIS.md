@@ -52,9 +52,7 @@ ship.Resources.Gem += min(int(ship.Type.Stats().Yield*float32(wreckShip.Resource
 
 - **DRY (Don't Repeat Yourself)** - rovnaký kód je zkopírovaný na viacerých miestach (5× validácia, 9× prenos zdrojov)
 - **Single Responsibility Principle** - funkcia trade() robí 2 veci (nákup AND predaj)
-- **Cyclomatic Complexity** - príliš mnoho vetvení v trade() (if/else)
 - **Otvorený/Zatvorený princíp (OCP)** - pridanie nového zdroja vyžaduje úpravu repetitívneho kódu
-- **Údržba** - ak sa zmení logika, musí sa upraviť na viacerých miestach
 - **Čitateľnosť** - 75+ riadkov repetitívneho kódu je ťažké pochopiť
 - **Testovateľnosť** - ťažké otestovať jednotlivé časti samostatne
 - **Chybovosť** - pri kopírovaní sa ľahko urobí chyba
